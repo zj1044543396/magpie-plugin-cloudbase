@@ -24,7 +24,7 @@ magpie provider test cloudbase-plugin
 
 ```bash
 # 从 npm（发布后）
-magpie plugin add npm:@zj1044543396/magpie-plugin-cloudbase
+magpie plugin add npm:@zxx9527/magpie-plugin-cloudbase
 
 # 从本地目录
 magpie plugin add /path/to/magpie-plugin-cloudbase
@@ -134,7 +134,7 @@ npm publish --access public
 别人就能装：
 
 ```bash
-magpie plugin add npm:@zj1044543396/magpie-plugin-cloudbase
+magpie plugin add npm:@zxx9527/magpie-plugin-cloudbase
 ```
 
 ### 进 magpie 官方市场（能用短名）
