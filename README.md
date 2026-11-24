@@ -1,4 +1,4 @@
-<p align="center">[English](README.md) | **简体中文**</p>
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
 
 # CloudBase provider for magpie
 
