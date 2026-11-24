@@ -1,5 +1,5 @@
 {
-  "name": "@zxx9527/magpie-plugin-cloudbase",
+  "name": "magpie-plugin-cloudbase",
   "version": "0.1.0",
   "description": "Tencent CloudBase models (DeepSeek V4.1, Hunyuan) as a provider in magpie",
   "type": "module",

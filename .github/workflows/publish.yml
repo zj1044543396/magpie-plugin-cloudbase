@@ -1,0 +1,44 @@
+name: publish
+
+# 发布 npm 包：推送 v* 标签时自动发，也可以在这里手动点 Run workflow
+#
+# 首次发布（包还不存在时）：仍需本地 `npm publish --otp=...` 一次。
+# 之后在 npm 包设置页绑定 Trusted Publisher，本 workflow 就能免 token 发布。
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  # OIDC：npm 用这个短期凭证校验「确实是这个仓库的这个 workflow 在发布」
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Upgrade npm (trusted publishing needs >= 11.5.1)
+        run: npm install -g npm@latest && npm --version
+
+      - name: Install
+        run: npm ci || npm install --no-audit --no-fund
+
+      - name: Test
+        run: npm test
+
+      - name: Publish
+        # 不给 NODE_AUTH_TOKEN：走 OIDC trusted publishing，凭证用完即焚
+        # --provenance 会附带构建来源证明，绑定 trusted publisher 后自动生效
+        run: npm publish --access public --provenance

@@ -34,7 +34,7 @@ npm test                               22 unit tests, all passing
 
 ```bash
 # from npm
-magpie plugin add npm:@zxx9527/magpie-plugin-cloudbase
+magpie plugin add npm:magpie-plugin-cloudbase
 
 # from GitHub (use this when npm is unreachable in your region)
 magpie plugin add github:zj1044543396/magpie-plugin-cloudbase

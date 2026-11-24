@@ -34,7 +34,7 @@ npm test                              22 个单元测试全过
 
 ```bash
 # 从 npm
-magpie plugin add npm:@zxx9527/magpie-plugin-cloudbase
+magpie plugin add npm:magpie-plugin-cloudbase
 
 # 从 GitHub（国内 npm 访问不通时用这个）
 magpie plugin add github:zj1044543396/magpie-plugin-cloudbase
