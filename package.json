@@ -21,6 +21,9 @@
     "deepseek"
   ],
   "license": "MIT",
+  "scripts": {
+    "test": "node --test test/index.test.mjs"
+  },
   "engines": {
     "node": ">=18"
   }
