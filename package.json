@@ -10,7 +10,8 @@
   "files": [
     "index.mjs",
     "opencode.mjs",
-    "README.md"
+    "README.md",
+    "README.zh-CN.md"
   ],
   "keywords": [
     "opencode",
