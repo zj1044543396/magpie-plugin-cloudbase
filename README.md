@@ -24,13 +24,13 @@ magpie provider test cloudbase-plugin
 
 ```bash
 # 从 npm（发布后）
-magpie plugin add npm:@your-scope/opencode-cloudbase-auth
+magpie plugin add npm:@zj1044543396/magpie-plugin-cloudbase
 
 # 从本地目录
 magpie plugin add /path/to/magpie-plugin-cloudbase
 
 # 从 git
-magpie plugin add github:your-name/magpie-plugin-cloudbase
+magpie plugin add github:zj1044543396/magpie-plugin-cloudbase
 ```
 
 ## 登录
