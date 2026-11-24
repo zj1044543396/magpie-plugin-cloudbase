@@ -134,7 +134,7 @@ npm publish --access public
 别人就能装：
 
 ```bash
-magpie plugin add npm:@your-npm-name/opencode-cloudbase-auth
+magpie plugin add npm:@zj1044543396/magpie-plugin-cloudbase
 ```
 
 ### 进 magpie 官方市场（能用短名）
