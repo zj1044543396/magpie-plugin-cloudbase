@@ -84,7 +84,7 @@ The plugin only tells magpie that a provider exists. **It does not contain the g
 | You need | Notes |
 |---|---|
 | A CloudBase environment | Personal plan is enough, with AI enabled |
-| A gateway cloud function | See the `cloudbase-openai-gateway` project; gives you `https://<env-id>.service.tcloudbase.com/v1` |
+| A gateway cloud function | See the [cloudbase-openai-gateway](https://github.com/zj1044543396/cloudbase-openai-gateway) project; gives you `https://<env-id>.service.tcloudbase.com/v1` |
 
 Deploy essentials: HTTP cloud function + a `/v1` route + your own `GATEWAY_API_KEY`. Full steps are in that project's README.
 
@@ -182,7 +182,7 @@ Add a directory under `packages/` (follow `packages/kiro`) and open a PR.
 
 ## Related
 
-- Gateway deployment: the `cloudbase-openai-gateway` project
+- Gateway deployment: [cloudbase-openai-gateway](https://github.com/zj1044543396/cloudbase-openai-gateway)
 - Official model API reference: `https://docs.cloudbase.net/ai/model/openai-sdk-access`
 
 ## License

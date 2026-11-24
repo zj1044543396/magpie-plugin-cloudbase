@@ -17,6 +17,7 @@
     "opencode",
     "opencode-plugin",
     "magpie",
+    "magpie-plugin",
     "cloudbase",
     "tencent",
     "deepseek"
@@ -27,5 +28,13 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "homepage": "https://github.com/zj1044543396/magpie-plugin-cloudbase#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zj1044543396/magpie-plugin-cloudbase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zj1044543396/magpie-plugin-cloudbase/issues"
   }
 }

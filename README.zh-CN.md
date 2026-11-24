@@ -84,7 +84,7 @@ magpie claude cloudbase-plugin/deepseek-v4.1-flash
 | 你需要 | 说明 |
 |---|---|
 | 云开发环境 | 个人版即可，已开通 AI 能力 |
-| 网关云函数 | 见 `cloudbase-openai-gateway` 项目，部署后得到一个 `https://<环境ID>.service.tcloudbase.com/v1` |
+| 网关云函数 | 见 [cloudbase-openai-gateway](https://github.com/zj1044543396/cloudbase-openai-gateway) 项目，部署后得到一个 `https://<环境ID>.service.tcloudbase.com/v1` |
 
 部署要点：HTTP 云函数 + `/v1` 路由 + 自己的 `GATEWAY_API_KEY`。完整步骤在那个项目的 README 里。
 
@@ -182,7 +182,7 @@ https://github.com/magpie-community/plugins
 
 ## 相关
 
-- 网关部署：`cloudbase-openai-gateway` 项目
+- 网关部署：[cloudbase-openai-gateway](https://github.com/zj1044543396/cloudbase-openai-gateway)
 - 官方模型 API 参考：`https://docs.cloudbase.net/ai/model/openai-sdk-access`
 
 ## 许可
